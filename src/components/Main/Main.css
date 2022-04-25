@@ -1,0 +1,194 @@
+body {
+    background: #217dae;
+}
+
+.main {
+    padding-top: 50px;
+    width: 70%;
+    margin: auto;
+    color: #217dae;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-left, .control-right {
+    background: white;
+    width: 49%;
+    display: flex;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.control-right {
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.control-left {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding-right: 30px;
+}
+
+.control-changer {
+    position: absolute;
+    color: white;
+    background: #ff7dae;
+    padding: 5px 20px;
+    z-index: 1;
+    border-radius: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    outline: 5px solid #ff7daf00;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.control-changer:active {
+    outline: 5px solid #ff7dae44;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-left, .input-right {
+    width: 49%;
+    position: relative;
+}
+
+.input-left textarea{
+    padding-right: 35px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    height: 50vh;
+    outline: none;
+    padding: 10px;
+    margin-top: 1px;
+    resize: none;
+    transition: all 0.2s ease-out;
+    outline: 5px solid rgba(255, 255, 255, 0);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+textarea:disabled {
+    background: rgb(255, 255, 255);
+}
+
+textarea:focus {
+    outline: 5px solid rgba(255, 255, 255, 0.486);
+}
+
+.control-word {
+    text-decoration: none;
+    color: #217dae;
+    cursor: pointer;
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    transform: translate(-12%, 15%);
+    padding: 5px 10px;
+    background: #217dae00;
+    color: #217dae;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    outline: 5px solid #217dae00;
+}
+
+.delete:hover {
+    color: white;
+    background: #217dae;
+}
+
+.delete:active {
+    outline: 5px solid #217dae44;
+}
+
+.copy-left {
+    position: absolute;
+    right: 0;
+    transform: translate(-12%, -30%);
+    bottom: 0;
+    padding: 5px 10px;
+    background: #217dae00;
+    color: #217dae;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    outline: 5px solid #217dae00;
+}
+
+.copy-left:hover {
+    color: white;
+    background: #217dae;
+}
+
+.copy-left:active {
+    outline: 5px solid #217dae44;
+}
+
+.copy-right {
+    position: absolute;
+    right: 0;
+    transform: translate(-12%, -30%);
+    bottom: 0;
+    padding: 5px 10px;
+    background: #217dae00;
+    color: #217dae;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    outline: 5px solid #217dae00;
+}
+
+.copy-right:hover {
+    color: white;
+    background: #217dae;
+}
+
+.copy-right:active {
+    outline: 5px solid #217dae44;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+  /* border-radius: 10px; */
+  background: #ffffff;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff7dae; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb2cf; 
+}
+
+hr {
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.513);
+    margin-top: 50px;
+}
